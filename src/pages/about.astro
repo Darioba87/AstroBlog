@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Navigation from "../components/Navigation.astro"
+import Footer from "../components/Footer.astro";
 
 const pageTitle = "About me";
 
@@ -39,9 +41,7 @@ const skillColor = "navy";
   </head>
   <body>
     <header>
-      <a href="/">Inicio</a>
-      <a href="/about/">Sobre mi</a>
-      <a href="/blog/">Blog</a>
+      <Navigation />
     </header>
     <h1>{pageTitle}</h1>
     <h2>...and my new Astro page</h2>
@@ -73,5 +73,6 @@ const skillColor = "navy";
         <p>Mi objetivo no son 3 días.</p>
       )
     }
+    <Footer />
   </body>
 </html>
